@@ -47,12 +47,15 @@ function MainLayout() {
   );
 }
 
+import AdminMessages from "./sections/AdminMessages";
+
 export default function App() {
   return (
     <ThemeProvider>
       <Router>
         <Routes>
           <Route path="/" element={<MainLayout />} />
+          <Route path="/admin-messages" element={<AdminMessages />} />
         </Routes>
       </Router>
     </ThemeProvider>
